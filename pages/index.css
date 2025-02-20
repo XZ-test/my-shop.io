@@ -1,0 +1,130 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Белый текст для контраста с фоном */
+    background-image: url('../images/hero.jpg'); /* Фоновое изображение */
+    background-size: cover; /* Растягивает изображение на весь экран */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+    background-attachment: fixed; /* Фиксирует фон при прокрутке */
+    min-height: 100vh; /* Минимальная высота страницы */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+header {
+    background-color: rgba(71, 185, 22, 0.8); /* Фон шапки */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffcccb; /* Цвет ссылок при наведении */
+}
+
+/* Основной контент */
+main {
+    flex: 1; /* Занимает всё доступное пространство */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Секция с карточками */
+.ads {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос карточек на новую строку */
+    gap: 30px; /* Расстояние между карточками */
+    justify-content: center; /* Центрируем карточки */
+    padding: 40px 20px;
+}
+
+/* Стиль карточки */
+.ad {
+    background-color: rgba(71, 185, 22, 0.8); /* Полупрозрачный фон */
+    border-radius: 15px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для объема */
+    overflow: hidden; /* Обрезаем лишнее */
+    width: 300px; /* Фиксированная ширина */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация */
+}
+.ad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgb(17, 114, 22);
+}
+
+
+/* Изображение в карточке */
+.ad img {
+    width: 100%; /* Занимает всю ширину карточки */
+    height: 250px; /* Фиксированная высота */
+    object-fit: cover; /* Сохраняет пропорции и обрезает лишнее */
+    border-bottom: 2px solid #5ca6a1; /* Красная полоска под изображением */
+}
+
+/* Заголовок карточки */
+.ad h3 {
+    font-size: 15px;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    margin: 15px 15px 15px;
+    text-align: center;
+}
+
+/* Описание карточки */
+.ad p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fffdfd;
+    padding: 0 15px 15px;
+    text-align: center;
+}
+
+/* Подвал */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(71, 185, 22, 0.8); /* Темный фон */
+    color: white;
+}
+
+footer .footer-left {
+    text-align: left;
+}
+
+footer .footer-left p {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+footer .footer-center {
+    text-align: center;
+}
+
+footer .footer-center p {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    margin: 0;
+}
